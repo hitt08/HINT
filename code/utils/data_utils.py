@@ -1,7 +1,7 @@
 import json
 import gzip
 import sys
-sys.path.insert(1, f'/nfs/jup/sensitivity_classifier/')
+
 from python_utils.data import read_dict
 from types import SimpleNamespace as Namespace
 

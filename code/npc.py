@@ -7,7 +7,7 @@ import networkx as nx
 import numpy as np
 import logging
 import sys
-sys.path.insert(1, f'/nfs/jup/sensitivity_classifier/')
+
 from python_utils.data import *
 from python_utils.time import *
 from utils.data_utils import read_nh_part

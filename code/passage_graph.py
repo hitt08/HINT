@@ -6,7 +6,7 @@ import logging
 import argparse
 from tqdm import tqdm
 import networkx as nx
-sys.path.insert(1, f'/nfs/jup/sensitivity_classifier/')
+
 from python_utils.data import *
 from python_utils.time import *
 from utils.data_utils import read_nh_part
@@ -14,7 +14,7 @@ from weight_functions import cos_time, get_nxe_weight_edges
 
 log=logging.getLogger()
 
-def construct_passage_graph(alpha=10,gamma=1,max_e=5,weight_threshold=0.7,root_dir="/nfs/threading",emb="minilm",notification_iter=-1):
+def construct_passage_graph(alpha=10,gamma=1,max_e=5,weight_threshold=0.7,root_dir=".",emb="minilm",notification_iter=-1):
     graph_root_dir = f"{root_dir}/graph_threading"
     nh_part = read_nh_part(root_dir)
     with np.load(f"{graph_root_dir}/nh_5w1h_{emb}_dt_emb.npz") as data:

@@ -6,7 +6,7 @@ from tqdm import tqdm
 import argparse
 from sklearn.metrics.pairwise import cosine_similarity
 import sys
-sys.path.insert(1, f'/nfs/jup/sensitivity_classifier/')
+
 from python_utils.data import *
 from utils.data_utils import load_config,read_nh_part,read_dict_dump
 from utils.thread_utils import ev_thread_score,eval_ev_threads

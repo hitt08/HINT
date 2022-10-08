@@ -2,7 +2,7 @@ import networkx as nx
 import pickle
 from tqdm import tqdm
 import sys
-sys.path.insert(1, f'/nfs/jup/sensitivity_classifier/')
+
 from python_utils.data import *
 from python_utils.time import *
 from Giveme5W1H.extractor.tools.timex import Timex

@@ -4,7 +4,7 @@ from Giveme5W1H.extractor.document import Document
 from Giveme5W1H.extractor.candidate import Candidate
 import logging
 import sys
-sys.path.insert(1, f'/nfs/jup/sensitivity_classifier/')
+
 from python_utils.data import *
 from multiprocessing import Pool,Manager,cpu_count
 from multiprocessing.managers import BaseManager
@@ -14,7 +14,7 @@ from multiprocessing.managers import BaseManager
 ques=["who","when","where"]
 
 def get_nh_5w1h(d_id):
-    with gzip.open(f"/nfs/threading/5w1h/newshead_extract/output/{d_id}.json.gz","rb") as f:
+    with gzip.open(f"newshead_extract/output/{d_id}.json.gz","rb") as f:
         data=json.loads(f.read().decode())
     text=data.setdefault('text', '')
     if text is None or text=="":
@@ -75,7 +75,7 @@ def nh_extract_entities(k):
 if __name__ == "__main__":
     log = logging.getLogger(__name__)
 
-    doc2storyid=read_dict(f"/nfs/threading/newshead/processed/doc2storyid_filtered.txt" )
+    doc2storyid=read_dict(f"data/newshead/processed/doc2storyid_filtered.txt" )
 
     pool_iter=list(doc2storyid.keys())
 
@@ -101,7 +101,7 @@ if __name__ == "__main__":
         st = en
         en = st + batch_size
         log.warning(f"Batch:{b}. Dumping Data")
-        with open("/nfs/threading/5w1h/nh_entities.p","wb") as f:
+        with open("data/nh_entities.p","wb") as f:
             pickle.dump(dict(nh_entities),f)
 
         b+=1

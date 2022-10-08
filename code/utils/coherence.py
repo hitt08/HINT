@@ -1,7 +1,7 @@
 from gensim.models.coherencemodel import CoherenceModel
 from gensim.corpora.dictionary import Dictionary
 import sys
-sys.path.insert(1, f'/nfs/jup/sensitivity_classifier/')
+
 from python_utils.time import *
 import logging
 

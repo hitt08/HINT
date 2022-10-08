@@ -8,10 +8,9 @@ from sklearn.pipeline import make_pipeline
 from sklearn.preprocessing import Normalizer
 import numpy as np
 from scipy.sparse import save_npz as sparse_save_npz
-sys.path.insert(1, f'/nfs/jup/sensitivity_classifier/threading')
 from sbert_encode import encode_sbert
 from utils.thread_utils import tokenize_split
-sys.path.insert(1, f'/nfs/jup/sensitivity_classifier/')
+
 # from python_utils.data import *
 from python_utils.time import *
 import torch
