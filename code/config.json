@@ -1,0 +1,14 @@
+{
+  "root_dir": "/nfs/threading",
+  "graph_root_dir": "/nfs/threading/graph_threading",
+  "emb_root_dir": "/nfs/threading/graph_threading/embeddings",
+  "threads_dir": "/nfs/threading/graph_threading/threads",
+  "validation_dir": "/nfs/threading/graph_threading/validation",
+  "continous_root_dir": "/nfs/threading/graph_threading/continous_passage_graphs",
+  "doc_ids_file": "pnct_nh_5w1h_passage_doc_ids.p",
+  "doc2id_file": "pnct_nh_5w1h_passage_doc2id.txt",
+  "date_features_file":"dt_feat.npz",
+  "entity_dict_file":"nh_who_where_entities.json.gz",
+  "passage_tfidf_features_file":"nh_tfidf_features.p",
+  "passage_tfidf_emb_file":"nh_tfidf_emb.npz"
+}
