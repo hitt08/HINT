@@ -1,6 +1,6 @@
 # HINT
-### Effective Hierarchical Information Threading using Network Community Detection
-
+### Narvala, H., McDonald, G., Ounis, I. (2023). Effective **H**ierarchical **In**formation **T**hreading Using Network Community Detection. In Proceedings of ECIR 2023. 
+https://doi.org/10.1007/978-3-031-28244-7_44
 
 
 1. Preprocess
@@ -31,4 +31,21 @@ python graph_threads.py -e minilm --td -a 10 --ent -g 0.1 -w 0.7
 5. Incremental HINT
 ```
 python daily_run.py -e minilm --td -a 10 --ent -g 0.1 -w 0.7 -t 1 --gpu
+```
+
+
+
+## Citation
+
+```
+@InProceedings{narvala2023_hint,
+author="Narvala, Hitarth
+and McDonald, Graham
+and Ounis, Iadh",
+title="Effective Hierarchical Information Threading Using Network Community Detection",
+booktitle="European Conference on Information Retrieval",
+year="2023",
+pages="701--716",
+doi="10.1007/978-3-031-28244-7_44"
+}
 ```
