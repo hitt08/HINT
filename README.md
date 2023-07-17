@@ -5,8 +5,8 @@ https://doi.org/10.1007/978-3-031-28244-7_44
 
 1. Preprocess
 ```
-python vectorise.py -e minilm
 python preprocess.py
+python vectorise.py -e minilm
 ```
 
 2. Parameter Tuning
